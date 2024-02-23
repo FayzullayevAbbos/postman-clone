@@ -6,9 +6,10 @@ const PostmanResponse = () => {
     state.requests.find((re) => re.id === state.currentRequest)
   );
   return (
-    <div className=" border mt-10 h-72 overflow-y-auto ">
+    <div className=" border mt-[100px] h-72 overflow-y-auto ">
       {request ? (
         <JSONPretty
+        className="p-5"
           mainStyle="background: #fff; color: rgb(0, 0, 0)"
           keyStyle="color: rgb(163, 21,21)"
           valueStyle="color:rgb(9, 134,88)"
